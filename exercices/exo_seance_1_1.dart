@@ -12,5 +12,11 @@ void main() {
   ];
 
   // À vous de jouer ici ! 
+    for (var cat in catalogueBrut) {
+      String nom = cat['nom'] ?? 'unknown';
+      double prix = cat['prix'] ?? 0.0;
+      int stock = cat['stock'] ?? 0;
+      print('Nom: $nom, Prix: $prix, Stock: $stock');
+    }
   // ...
 }
